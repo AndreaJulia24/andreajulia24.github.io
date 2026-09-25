@@ -1,0 +1,103 @@
+---
+layout: default
+title: "Lab1 - Sakktábla"
+permalink: /lab1/
+---
+
+<!-- _pages/lab1.html -->
+<style>
+     /* Alap méretezés */
+    #sakktabla {
+        border-collapse: collapse;
+        width: 400px;
+        height: 400px;
+    }
+
+    #sakktabla td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+    }
+
+    /* Sakktábla minta nth-child */
+    /* 1. Páratlan sorok (1, 3, 5, 7): */
+    #sakktabla tr:nth-child(odd) td:nth-child(odd) {
+        background-color: #f0d9b5; /* világos mező */
+    }
+    #sakktabla tr:nth-child(odd) td:nth-child(even) {
+        background-color: #b58863; /* sötét mező */
+    }
+
+    /* 2. Páros sorok (2, 4, 6, 8) eltolt mintával: */
+    #sakktabla tr:nth-child(even) td:nth-child(odd) {
+        background-color: #b58863; /* sötét mező */
+    }
+    #sakktabla tr:nth-child(even) td:nth-child(even) {
+        background-color: #f0d9b5; /* világos mező */
+    }
+
+    /*Hover effektus a mezőkön */
+    #sakktabla td:hover {
+        background-color: #ffeb3b; /* sárga kiemelés */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Középre igazítás */
+    #sakktabla {
+        margin: 0 auto;
+    }
+
+    /* arnyek a mezőkön */
+    #sakktabla td {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* reszponziv meretezés */
+    @media (max-width: 600px){
+        #sakktabla {
+            width: 100%;
+            height: auto;
+        }
+        #sakktabla td {
+            width: 12.5%; /* 8 oszlop, így 100% / 8 = 12.5% */
+            height: auto;
+        }
+    }
+
+</style>
+
+<table id='sakktabla' cellspacing=0>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td>
+    </tr>
+</table>
