@@ -25,6 +25,9 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  - title: "Lab1"
+    url: /lab1/
     
   # - title: "CV"
   #   url: /cv-json/
